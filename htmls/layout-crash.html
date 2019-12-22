@@ -550,8 +550,9 @@
         var container = document.querySelector('.container');
 
         function firstRun() {
+          const x = window.scrollY;
           divs.forEach(function(elem, index, arr) {
-            if (window.scrollY < 200) {
+            if (x < 200) {
               elem.style.opacity = 0.5;
             }
           })
